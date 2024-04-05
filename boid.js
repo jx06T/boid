@@ -33,7 +33,7 @@ if (!jxdata) {
     console.log(jsonData);
 }
 let BoidData = jsonData
-let initdata2 = {...BoidData}
+let initdata2 = { ...BoidData }
 
 console.log(BoidData, initdata2)
 let mouseX = 0
@@ -52,16 +52,16 @@ class Boid {
         this.direction = 0
 
         this.canvas = document.createElement('canvas');
-        this.width = this.canvas.width = 60;
-        this.height = this.canvas.height = 60;
+        this.width = this.canvas.width = 0.6 * BoidData.Size;
+        this.height = this.canvas.height = 0.6 * BoidData.Size;
         this.ctx = this.canvas.getContext('2d');
-        this.ctx.translate(30, 30);
+        this.ctx.translate(0.3 * BoidData.Size, 0.3 * BoidData.Size);
         this.ctx.scale(BoidData.Size * 0.01, BoidData.Size * 0.01)
         this.create(this.ctx);
     }
     create(ctx) {
 
-        ctx.clearRect(-30, -30, 60, 60);
+        ctx.clearRect(-0.7 * BoidData.Size, -0.7 * BoidData.Size, 1.4*BoidData.Size, 1.4*BoidData.Size);
         // ctx.fillStyle = '#2f63cf'
         // ctx.fillRect(-30, -30, 60, 60)
 
