@@ -72,7 +72,7 @@ body {
 }
 
 #optt {
-    height: 360px;
+    /* height: 360px; */
     width: 100%;
     /* background-color: #fff; */
     display: block;
@@ -112,12 +112,44 @@ body {
     padding-top: 9px;
 }
 
+@media screen and (max-height: 550px) {
+    .opts input {
+        margin: 3px !important;
+        width: 100px !important;
+        height: 25px !important;
+    }
+
+    .opts a {
+        margin: 3px;
+        margin-right: 10px;
+        margin-left: 7px;
+        color: rgb(245, 245, 245);
+        line-height: 28px;
+
+    }
+
+    .RR {
+        height: 30px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        padding-top: 0px;
+    }
+    #ResetAllB,
+    #ResetAllAll {
+        height: 30px !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+}
+
+
 #opttt .R,
 #opttttt .R {
     font-size: 15px;
 }
 
-#ResetAllAll,#ResetAllB {
+#ResetAllAll,
+#ResetAllB {
     width: 215px;
 }
 
@@ -159,7 +191,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .flashh {
     background-color: rgba(230, 230, 230, 0.75);
-    animation: flash 0.4s linear  !important;
+    animation: flash 0.4s linear !important;
 }
 
 @keyframes flash {
