@@ -1,0 +1,177 @@
+.LR {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.UD {
+    display: flex;
+    flex-flow: column;
+}
+
+canvas {
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(46, 46, 46);
+}
+
+#opt.sting {
+    height: 102vh;
+    top: -5px;
+    left: -5px;
+    width: 235px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+#opt {
+    height: 40PX;
+    width: 40px;
+    background-color: rgba(180, 180, 180, 0.3);
+    border-radius: 13px;
+    /* visibility: hidden; */
+    z-index: 9999;
+
+    position: absolute;
+    top: -10px;
+    left: -10px;
+
+    animation: my-animation 2s infinite;
+    /* text-align: right; */
+}
+
+#opt:not(.sting):hover {
+    background-color: rgba(140, 140, 140, 0.9);
+}
+
+#opt:not(.sting):hover label {
+    font-size: 22px;
+    line-height: 51px;
+    margin-left: 10px;
+}
+
+#opt:not(.sting) label {
+    font-size: 17px;
+    line-height: 51px;
+    margin-left: 13px;
+    color: black;
+}
+
+#opt.sting label {
+    display: none;
+}
+
+#optt {
+    height: 360px;
+    width: 100%;
+    /* background-color: #fff; */
+    display: block;
+}
+
+#opt:not(.sting) .opts {
+    display: none;
+}
+
+.opts a {
+    margin: 10px;
+    color: rgb(245, 245, 245);
+    line-height: 22px;
+}
+
+.R {
+    margin: 4px;
+    color: rgb(245, 245, 245);
+    padding-top: 2px;
+    line-height: 38px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 25px;
+    text-align: center;
+}
+
+.R:hover {
+    background: rgba(230, 230, 230, 0.2);
+    border-radius: 3px;
+}
+
+.RR {
+    margin-left: 5px !important;
+    margin-top: 5px !important;
+    width: 100px;
+    height: 30px;
+    padding-top: 9px;
+}
+
+#opttt .R,
+#opttttt .R {
+    font-size: 15px;
+}
+
+#ResetAllAll,#ResetAllB {
+    width: 215px;
+}
+
+.opts input {
+    color: rgb(245, 245, 245);
+    border-radius: 10px;
+    margin: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #686868;
+    outline: none;
+
+    &:focus {
+        border-color: #b5b5b5;
+    }
+}
+
+input:focus::after {
+    border-color: #fff transparent transparent #fff;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    width: 8px;
+    height: 22px;
+    margin-right: 2PX;
+    background-color: #ddd;
+    border: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    border-radius: 8px;
+    cursor: default;
+}
+
+.flashh {
+    background-color: rgba(230, 230, 230, 0.75);
+    animation: flash 0.4s linear  !important;
+}
+
+@keyframes flash {
+    0% {
+        background-color: rgba(180, 180, 180, 0.3);
+    }
+
+    50% {
+        background-color: rgba(200, 200, 200, 0.2);
+    }
+
+    100% {
+        background-color: rgba(180, 180, 180, 0.3);
+    }
+}
